@@ -1,0 +1,41 @@
+/* miniprogram/pages/build/build.wxss */
+.build-content{
+  padding: 20rpx;
+}
+.build{
+  font-size: 35rpx;
+}
+.input{
+  font-size: 35rpx;
+  padding:30rpx 0;
+}
+.input-content{
+  padding: 10rpx;
+  border-radius:80rpx;
+  background: #efefef;
+}
+.input input{
+  width:80%;
+  display: inline-block
+}
+.build-item{
+  border-bottom:1px solid #d2cfcf;
+  padding: 30rpx 10rpx;
+  font-size:35rpx;
+}
+.row{
+  width: 100%;
+  font-size: 35rpx;
+  color: #000;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}

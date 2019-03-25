@@ -1,0 +1,79 @@
+/* miniprogram/pages/recharge/recharge.wxss */
+@import "/style/icon.wxss";
+.main{
+  margin: 20px;
+}
+.card{
+  border-radius: 20rpx;
+  border: 2rpx solid #e4393c;
+}
+.card-content{
+  margin: 40rpx 20rpx;
+}
+.card-info{
+  vertical-align: middle;
+  display: flex;
+}
+.card-list{
+  display: inline-block;
+}
+.card-size{
+  font-size: 60rpx;
+  color:#e4393c;
+}
+.card-detail-info{
+  padding-left:20rpx;
+}
+.card-number{
+  color:#000;
+  font-size:40rpx;
+}
+.card-name{
+  font-size: 28rpx;
+  color:#848181;
+}
+.money{
+  margin-top:20rpx;
+}
+.money-list{
+  display: inline-block;
+  font-size:35rpx;
+}
+.money-left{
+  width: 50%;
+  text-align: left;
+}
+.money-right{
+  width: 50%;
+  text-align: right;
+}
+.money-number{
+  color:#e4393c;
+}
+.text{
+  font-size: 35rpx;
+  padding: 20rpx 0;
+}
+.recharge-list{
+  border-radius: 10rpx;
+  padding: 25rpx 0rpx;
+  margin:20rpx 10rpx;
+  width: 29%;
+  text-align: center;
+  border:1rpx solid #000;
+  color: #000;
+  display: inline-block;
+  font-size:40rpx;
+}
+.active{
+  border:1rpx solid #e4393c;
+  color: #e4393c;
+}
+.button{
+  width: 100%;
+  text-align: center;
+  background: #e4393c;
+  color:#fff;
+  padding: 25rpx 0;
+  margin-top:100rpx;
+}

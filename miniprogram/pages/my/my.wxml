@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<import src="../../template/template.wxml" />
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class="container">
+  <view class="userCard">
+    <view class="card-list">
+      <view class="myAdv" catchtap='chooseImg'>
+      <image src='user-unlogin.png'></image>
+    </view>
+    </view>
+    <view class="card-list">
+      <view class="user-name">{{EmployeeName}}</view>
+      <view class="user-phone">{{phone}}</view>
+    </view>
+    <view class="card-list card-btn" bindtap='cancelBind'>解除绑定</view>
+  </view>
+  <view class="user">
+    <view class="user-item" catchtap='userEdit'>
+      <view class="row">
+        <view><icon class="myIcon icon-bianji myIcon-size"></icon>编辑资料</view>
+        <view><text class="icon-right">></text></view>
+      </view>
+    </view>
+    <view class="user-item" catchtap='pwdEdit'>
+      <view class="row">
+        <view><icon class="myIcon icon-xiugaimima myIcon-size"></icon>修改密码</view>
+        <view><text class="icon-right">></text></view>
+      </view>
+    </view>
+    <view class="user-item" catchtap='build'>
+      <view class="row">
+        <view><icon class="myIcon icon-lou myIcon-size"></icon>楼栋</view>
+        <view>{{BuildingName}}<text class="icon-right">></text></view>
+      </view>
+    </view>
+    <view class="user-item" catchtap='room'>
+      <view class="row">
+        <view><icon class="myIcon icon-room myIcon-size"></icon>房间号</view>
+        <view>{{RoomName}}<text class="icon-right">></text></view>
+      </view>
+    </view>
+  </view>
+  <view class="button" catchtap='loginOut'>退出登录</view>
+</view>

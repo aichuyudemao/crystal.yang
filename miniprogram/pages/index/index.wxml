@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<import src="../../template/template.wxml" />
+<template is="tabBar" data="{{tabBar:bindData.tabBar}}" />
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="{{indicatorActive}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:{{swiperH1}};width:{{winWid1}};'>
+      <block wx:for="{{imgUrls}}" wx:key="key">
+        <swiper-item bindtap='bannerDetail'>
+          <image src="{{item}}" class="slide-image" style='height:{{swiperH1}};width:{{winWid1}}' bindload='swiperHeight' mode="widthFix"/>
+        </swiper-item>
+      </block>
+  </swiper>
+  <view wx:if="{{!isBindCard}}">
+    <view class='bind-card'>
+      <view class='tab'>绑定校园卡已查看余额</view>
+      <navigator url='/pages/bindCard/bindCard'>
+        <view class='btn'>绑卡</view>
+      </navigator>
+     
+    </view>
+  </view>
+  <view class="card" wx:if="{{isBindCard}}">
+    <view class="card-list">
+      <view class="card-text">卡号<span style='color:#666'>({{nCardStatusIDName}})</span></view>
+      <view class="card-num">{{CardID}}</view>
+    </view>
+    <view class="card-list">
+      <view class="card-text">余额</view>
+      <view class="card-num">￥{{nCardValue}}</view>
+    </view>
+    <view class="card-list">
+      <view class="card-text">未领金额</view>
+      <view class="card-num">￥{{AccountMoney}}</view>
+    </view>
+  </view>
+  <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{routers}}" wx:key="name">
+            <view class='weui-grid-bg'>
+                <icon class="iconfont {{item.icon}} weui-grid-icon" style="color:{{item.color}}" data-isbindCard="{{isBindCard}}" data-url="{{item.url}}" bindtap="{{item.tab}}"></icon>
+                <text class="weui-grid-label" data-isbindCard="{{isBindCard}}" data-url="{{item.url}}" bindtap="{{item.tab}}">{{item.name}}</text>
+            </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class='container'>
+  <view class='tab'>
+    将卡插入转账充值机上以获取卡片信息
+  </view>
+  <form bindsubmit='submitForm'>
+    <view class="user-item">
+      <view class="row">
+        <view class='label'>卡号：</view>
+        <view>
+          <input name='cardid' placeholder='请输入卡号' bindinput="cardid"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user-item">
+      <view class="row">
+        <view class='label'>PIN码：</view>
+        <view>
+          <input name='cardpwd' placeholder='请输入PIN码' bindinput="cardpwd"></input>
+        </view>
+      </view>
+    </view>
+     <button class="btn" form-type='submit'>绑定</button>
+  </form>
+</view>

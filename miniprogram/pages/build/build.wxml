@@ -1,0 +1,36 @@
+<!--miniprogram/pages/build/build.wxml-->
+<view class="container">
+  <view class="build-content">
+    <view class="build">当前楼栋：亚都赠送和工厂测试用户</view>
+    <view class="input">
+      <view class="input-content">
+        <icon type="search" size="20"/>
+      <input type="text" placeholder='输入楼栋名查询'></input>
+      </view>
+    </view>
+    <view class="build-list">
+      <view class="build-item">
+        <view class="row">
+          <view>亚都赠送和工厂测试用户</view>
+        </view>
+      </view>
+      <view class="build-item">
+        <view class="row">
+          <view>亚都赠送和工厂测试用户</view>
+        </view>
+      </view>
+      <view class="build-item">
+        <view class="row">
+          <view>亚都赠送和工厂测试用户</view>
+        </view>
+      </view>
+      <view class="build-item">
+        <view class="row">
+          <view>亚都赠送和工厂测试用户</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,30 @@
+/* miniprogram/pages/userEdit/userEdit.wxss */
+.user{
+  padding: 0 20rpx;
+}
+.user-item{
+  border-bottom:1px solid #d2cfcf;
+  padding: 20rpx 10rpx;
+  font-size:35rpx;
+}
+.row{
+  width: 100%;
+  font-size: 35rpx;
+  color: #000;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center
+ 
+}
+.button{
+  width: 100%;
+  text-align: center;
+  background: #e4393c;
+  color:#fff;
+  padding: 30rpx 0;
+  margin-top:100rpx;
+}
+/* .my-label{
+  width: 40%;
+  text-align: right;
+} */

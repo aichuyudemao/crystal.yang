@@ -1,0 +1,35 @@
+<!--miniprogram/pages/recharge/recharge.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="card">
+      <view class="card-content">
+        <view class="card-info">
+          <view class="card-list">
+          <icon class="iconfont icon-banka card-size"></icon>
+          </view>
+          <view class="card-list card-detail-info">
+          <view class="card-number">{{CardID}}</view>
+          <view class="card-name">{{EmployeeName}}</view>
+          </view>
+        </view>
+        <view class="money">
+          <view class="money-list money-left">余额：<text class="money-number">￥{{nCardValue}}</text></view>
+          <view class="money-list money-right">未领金额：<text class="money-number">￥{{AccountMoney}}</text></view>
+        </view>
+      </view>
+    </view>
+    <view class="text">请选择充值金额</view>
+    <view class="recharge">
+      <view class="recharge-list {{num==1?'active':''}}" data-num='1' catchtap='changeOil'>30元</view>
+      <view class="recharge-list {{num==2?'active':''}}" data-num='2' catchtap='changeOil'>50元</view>
+      <view class="recharge-list {{num==3?'active':''}}" data-num='3' catchtap='changeOil'>100元</view>
+      <view class="recharge-list {{num==4?'active':''}}" data-num='4' catchtap='changeOil'>150元</view>
+      <view class="recharge-list {{num==5?'active':''}}" data-num='5' catchtap='changeOil'>200元</view>
+      <view class="recharge-list {{num==6?'active':''}}" data-num='6' catchtap='changeOil'>{{text}}</view>
+    </view>
+    <modal hidden="{{hiddenmodalput}}" title="请输入金额" confirm-text="确认" cancel-text="取消" bindcancel="cancel"    bindconfirm="confirm">
+    <input bindblur="bindblur" type='digit' placeholder="请输入金额" value="{{value}}"/>
+    </modal>
+  </view>
+  <view class="button">立即充值</view>
+</view>

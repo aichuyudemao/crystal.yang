@@ -1,0 +1,71 @@
+/* miniprogram/pages/my/my.wxss */
+@import '/style/myIcon.wxss';
+.userCard{
+  width: 100%;
+  padding: 40rpx 20rpx;
+  border-bottom: 20rpx solid #ececec;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.card-list{
+  display: inline-block;
+}
+.card-btn{
+  color: #e4393c;
+  border: 1rpx solid #e4393c;
+  border-radius:10rpx;
+  padding: 10rpx;
+  font-size: 35rpx;
+  position: absolute;
+  right:20rpx;
+}
+.myAdv{
+  width: 150rpx;
+  height: 150rpx;
+  font-size:35rpx;
+}
+.myAdv image{
+  width: 100%;
+  height: 100%;
+}
+.user-phone{
+  font-size: 30rpx;
+}
+.user{
+  padding: 0 20rpx;
+}
+.user-item{
+  border-bottom:1px solid #d2cfcf;
+  padding: 20rpx 10rpx;
+  font-size:35rpx;
+}
+.row{
+  width: 100%;
+  font-size: 35rpx;
+  color: #000;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.icon-right{
+  color: #d2cfcf;
+}
+.button{
+  width: 100%;
+  text-align: center;
+  background: #e4393c;
+  color:#fff;
+  padding: 30rpx 0;
+  margin-top:100rpx;
+}

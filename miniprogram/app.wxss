@@ -1,0 +1,11 @@
+/**app.wxss**/
+@import "/template/template.wxss";
+page{
+  height: 100%;
+  width:100%;
+  background: #FFF;
+  position: relative
+}
+.container {
+  height: 100%;
+} 

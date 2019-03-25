@@ -1,0 +1,24 @@
+<!--miniprogram/pages/pwdEdit/pwdEdit.wxml-->
+<form bindsubmit='submitForm'>
+  <view class="container">
+    <view class="user">
+      <view class="user-item">
+        <view class="row">
+          <view style='width:30%'>旧密码：</view>
+          <view>
+            <input type='password' name='oldPassword' placeholder='请输入旧密码' bindinput="oldPassword"></input>
+          </view>
+        </view>
+      </view>
+      <view class="user-item">
+        <view class="row">
+          <view style='width:30%'>新密码：</view>
+          <view>
+            <input type='password' name='newPassword' placeholder='6位数字密码' bindinput="newPassword"></input>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button class="button" form-type='submit'>提交</button>
+  </view>
+</form>

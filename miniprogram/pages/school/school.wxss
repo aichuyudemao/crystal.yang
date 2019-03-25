@@ -1,0 +1,54 @@
+/* pages/school/school.wxss */
+.school_box{
+  height:100%;
+  background: #fff;
+  display: flex;
+}
+.search{
+  padding: 40rpx 0rpx;
+}
+.school-title{
+  font-size:30rpx;
+  padding: 10rpx;
+  border-radius:80rpx;
+  background: #eee;
+  width: 88%;
+  margin: 0 auto;
+}
+.school-title input{
+  width: 90%;
+  display: inline-block
+}
+.school_left{
+  flex: 1;
+}
+.school_right{
+  width: 80rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.letter_item{
+  flex: 1;
+  display: block;
+  font-size: 35rpx;
+  color: #e4393c;
+  text-align: center;
+}
+.school_first_letter{
+  line-height: 40rpx;
+  height: 40rpx;
+  padding-left: 25rpx;
+  font-size: 28rpx;
+  background: #eee;
+  color: #999;
+}
+.school_name{
+  display: block;
+  line-height: 80rpx;
+  height: 80rpx;
+  border-bottom: 1px solid #efefef;
+  font-size: 30rpx;
+  color: #333;
+  padding-left: 25rpx;
+}

@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/login/login",
+    "pages/recharge/recharge",
+    "pages/userEdit/userEdit",
+    "pages/school/school",
+    "pages/index/index",
+    "pages/city/city",
+    
+    "pages/pwdEdit/pwdEdit",
+    "pages/bindCard/bindCard",
+    "pages/regist/regist",
+    "pages/resetPwd/resetPwd",
+    "pages/loss/loss",
+    "pages/reissue/reissue",
+    "pages/handleCard/handleCard",
+    "pages/build/build",
+    "pages/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e4393c",
+    "navigationBarTitleText": "亚都校园热水",
+    "navigationBarTextStyle": "white"
+  }
+}

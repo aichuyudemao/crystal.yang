@@ -1,0 +1,34 @@
+<!--miniprogram/pages/room/room.wxml-->
+<view class="container">
+  <view class="build-content">
+    <view class="build">当前房间：工厂使用</view>
+    <view class="input">
+      <view class="input-content">
+        <icon type="search" size="20"/>
+        <input type="text" placeholder='输入房间名查询'></input>
+      </view>
+    </view>
+    <view class="build-list">
+      <view class="build-item">
+        <view class="row">
+          <view>工厂使用</view>
+        </view>
+      </view>
+      <view class="build-item">
+        <view class="row">
+          <view>工厂使用</view>
+        </view>
+      </view>
+      <view class="build-item">
+        <view class="row">
+          <view>工厂使用</view>
+        </view>
+      </view>
+      <view class="build-item">
+        <view class="row">
+          <view>工厂使用</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

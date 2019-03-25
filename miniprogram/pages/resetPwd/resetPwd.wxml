@@ -1,0 +1,36 @@
+<!--pages/resetPwd/resetPwd.wxml-->
+<form bindsubmit='submitForm'>
+<view class="container">
+  <view class="user">
+    <view class="user-item">
+      <view class="row">
+        <view  style="width:30%">手机号码：</view>
+        <view style="width:60%">
+          <input type='tel' name='phone' placeholder='请输入手机号码' bindinput="phone"></input>
+        </view>
+      </view>
+    </view>
+    <view class='user-item'>
+      <view class="row">
+        <view style="width:30%">验  证  码：</view>
+        <view style="width:30%">
+          <input type='text' name='code' placeholder='请输入验证码'></input>
+        </view>
+        <button style="width:30%" class='getCode' disabled='{{disabled}}' data-id="2" bindtap="getVerificationCode">
+          {{time}}
+        </button>
+      </view>
+    </view>
+    <view class="user-item">
+      <view class="row">
+        <view style="width:30%">新  密  码：</view>
+        <view style="width:30%">
+          <input type='password' name='password' placeholder='6位数字密码' bindinput="password"></input>
+          <!-- <input type='password' name='password' placeholder='6位数字密码' style="width：100%" indinput="password"></input> -->
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="button" form-type='submit'>提交</button>
+</view>
+</form>

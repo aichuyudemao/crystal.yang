@@ -1,0 +1,28 @@
+<!--miniprogram/pages/login/login.wxml-->
+<form bindsubmit='submitForm'>
+<view class='container'>
+    <view class='content'>
+        <view class='content-item'>
+          <icon class="loginfont icon-shouji"></icon>
+          <input type='number' name='phone' placeholder='请输入手机号码' maxlength='11' bindinput="phone"/>
+        </view>
+        <view class='content-item'>
+          <icon class="loginfont icon-mima"></icon>
+          <input type='password' name='password' placeholder='请输入登录密码' maxlength='6' bindinput="password"/>
+        </view>
+        <view class="nav">
+          <navigator url='../regist/regist' class='regist'open-type='navigate'>
+            还没有账号？立即注册>>
+          </navigator>
+          <navigator url='../resetPwd/resetPwd' class='forgetPwd' open-type='navigate'>
+            忘记密码
+          </navigator>
+        </view>
+        <view class="login">
+        <button class='btn' form-type='submit'>登录</button>
+          <!-- <view class='btn' bindtap='login'>登录</view> -->
+        </view>
+    </view>
+</view>
+</form>
+

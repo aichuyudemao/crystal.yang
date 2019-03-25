@@ -1,0 +1,58 @@
+<!--miniprogram/pages/reissue/reissue.wxml-->
+<view class="container">
+  <view class="user">
+    <view class="user-item">
+      <view class="row">
+        <view class='my-label'>卡号：</view>
+        <view>
+          <input type='text' placeholder='尚未完善' value="{{CardID}}"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user-item">
+      <view class="row">
+        <view class='my-label'>姓名：</view>
+        <view>
+          <input type='text' placeholder='尚未完善' value="{{EmployeeName}}"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user-item">
+      <view class="row">
+        <view class='my-label'>性别：</view>
+        <view>
+          <input type="text" placeholder='尚未完善' value="{{Sex}}"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user-item">
+      <view class="row">
+        <view class='my-label'>身份证：</view>
+        <view>
+          <input type="text" placeholder='尚未完善' value="{{Identifier}}"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user-item">
+      <view class="row">
+        <view class='my-label'>楼栋：</view>
+        <view>
+          <input type="text" placeholder='尚未完善' value="{{BuildingName}}"></input>
+        </view>
+      </view>
+    </view>
+    <view class="user-item">
+      <view class="row">
+        <view class='my-label'>房间号：</view>
+        <view>
+          <input type="text" placeholder='尚未完善' value="{{RoomName}}"></input>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="button" bindtap='reissue'>提交</view>
+  <modal hidden="{{reissue}}" title="请输入密码" confirm-text="确认" cancel-text="取消" bindcancel="cancel"    bindconfirm="confirm">
+    <input bindblur="bindblur" type='password' placeholder="请输入密码" value="{{password}}"/>
+  </modal>
+</view>
+

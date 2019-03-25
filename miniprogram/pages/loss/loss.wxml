@@ -1,0 +1,27 @@
+<!--miniprogram/pages/loss/loss.wxml-->
+<view class="container">
+  <view class="main">
+    <view class="card">
+      <view class="card-content">
+        <view class="card-info">
+          <view class="card-list">
+          <icon class="iconfont icon-banka card-size"></icon>
+          </view>
+          <view class="card-list card-detail-info">
+          <view class="card-number"><span class='my-cardid'>{{CardID}}</span><text class="card-name">{{EmployeeName}}</text></view>
+          <view class="card-name">卡状态：{{nCardStatusID}}</view>
+          </view>
+        </view>
+        <view class="money">
+          <view class="money-list money-left">余额：<text class="money-number">￥{{nCardValue}}</text></view>
+          <view class="money-list money-right">未领金额：<text class="money-number">￥{{AccountMoney}}</text></view>
+        </view>
+      </view>
+    </view>
+    <modal hidden="{{loss}}" title="请输入密码" confirm-text="确认" cancel-text="取消" bindcancel="cancel"    bindconfirm="confirm">
+    <input bindblur="bindblur" type='password' placeholder="请输入密码" value="{{password}}"/>
+    </modal>
+  </view>
+  <view class="button" catchtap='loss'>立即{{action}}</view>
+</view>
+
